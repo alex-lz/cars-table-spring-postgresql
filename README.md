@@ -18,6 +18,17 @@
 4. Update car path - Update
    - /update/car
 
-
+### DataBase postgreSQL - cars
+```
+CREATE TABLE cars(
+   id serial PRIMARY KEY,
+   brand VARCHAR (50) NOT NULL,
+   name VARCHAR (50) NOT NULL,
+   model VARCHAR (10) NOT NULL,
+   year INT NOT NULL,
+   price DECIMAL NOT NULL,
+   UNIQUE(brand,name,model,year)
+);
+```
 
 * [MD Files code](https://help.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks)
